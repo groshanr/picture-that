@@ -1,0 +1,8 @@
+Drawings/
+wandb/
+cnn-aug.keras
+cnn.keras
+models.keras
+models-aug.keras
+ft-resnet50.keras
+ft-resnet50-aug.keras

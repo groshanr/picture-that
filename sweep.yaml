@@ -1,0 +1,26 @@
+
+# sweep.yaml
+# https://wandb.ai/wandb_fc/articles/reports/Hyperparameter-Tuning-for-Keras-and-Pytorch-models--Vmlldzo1NDMyMzkx
+program: train.py
+method: random
+metric:
+ name: epoch/val_accuracy
+ goal: maximize
+parameters:
+ learning-rate:
+   min: 0.00001
+   max: 0.1
+ optimizer:
+   values: ["adam", "sgd", "adamw"]
+ hidden_layer_size:
+   values: [16, 32, 64, 128, 256]
+ epochs:
+   values: [5, 10, 25, 50, 100]
+early_terminate:
+   type: hyperband
+   s: 2
+   eta: 3
+   max_iter: 27
+
+
+
