@@ -6,3 +6,7 @@ models.keras
 models-aug.keras
 ft-resnet50.keras
 ft-resnet50-aug.keras
+cnn-output.csv
+cnn-aug-output.csv
+ft-output.csv
+ft-aug-output.csv
