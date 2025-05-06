@@ -10,3 +10,4 @@ cnn-output.csv
 cnn-aug-output.csv
 ft-output.csv
 ft-aug-output.csv
+.DS_Store
